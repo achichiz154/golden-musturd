@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden Mustard Oil | Pure. Pressed. Powerful.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --gold: #d1a400;
+      --green: #607d3b;
+      --dark: #2f2f2f;
+      --light: #fdfaf3;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      font-family: 'Playfair Display', serif;
+    }
+    header h1 { font-size: 48px; margin-bottom: 10px; }
+    header p { font-size: 18px; letter-spacing: 1px; }
+    nav {
+      background: var(--gold);
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1631614387472-cce2dc130618') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    ul {
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.8;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✅ ";
+      color: var(--green);
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      max-width: 280px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .products { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Golden Mustard</h1>
+    <p>100% Pure Cold Pressed Mustard Oil – Traditional. Healthy. Honest.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Power of Purity in Every Drop</h2>
+  </section>
+
+  <section id="benefits">
+    <h2>Why Golden Mustard?</h2>
+    <ul>
+      <li>Cold Pressed from handpicked mustard seeds</li>
+      <li>No chemicals, preservatives or bleach</li>
+      <li>High in Omega-3 and natural antioxidants</li>
+      <li>Great for heart, immunity and deep flavor</li>
+      <li>Perfect for pickles, cooking, and massage</li>
+    </ul>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1651385227090-5188847fcd86" alt="500ml Bottle" loading="lazy">
+        <h3>500ml Classic Glass</h3>
+        <p>Freshness sealed in every sip. Ideal for homes.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1626847087525-807602f4030c" alt="1L Bottle" loading="lazy">
+        <h3>1L Family Bottle</h3>
+        <p>Value size. Cold pressed & filtered. All-natural.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1655248233277-7fe5d46f15c3" alt="5L Tin" loading="lazy">
+        <h3>5L Bulk Tin</h3>
+        <p>Great for restaurants, retailers and bulk orders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Order</h2>
+    <p style="text-align:center; font-size: 16px;">
+      📞 WhatsApp: <strong>+92-300-XXXXXXX</strong><br>
+      ✉️ Email: <strong>goldenmustard@purepress.com</strong><br>
+      📍 Shipping available across Pakistan
+    </p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Golden Mustard | Crafted with Care. Cold Pressed for Purity.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+</html>
